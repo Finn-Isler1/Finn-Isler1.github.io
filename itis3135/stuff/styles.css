@@ -1,0 +1,37 @@
+img{
+    aspect-ratio: 400px;
+    margin: 60px 23px 27px 15px;
+}
+
+p{
+    font-family: papyrus;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 23px 27px 15px;
+}
+
+h2{
+    font-family: comic-sans;
+    color: rgb(222, 187, 187);
+    background-color: orange;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 570px;
+}
+
+.big{
+    font-size: 120pt;
+}
+
+a{
+    margin-left: 60px;
+}
+
+i{
+    font-size: 50pt;
+}

@@ -93,6 +93,17 @@ header{
     font-size: 18px;
 }
 
+.secondary-navbar{
+    padding-top: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 /* footer */
