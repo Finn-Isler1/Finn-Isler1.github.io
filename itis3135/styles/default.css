@@ -1,3 +1,44 @@
+
+/* for laptops */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+
+}
+
+
+/* Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+
+}
+
+/* For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 :root{
     --primary-color: #FFF2F2;
     --secondary-color: #dee5ff;

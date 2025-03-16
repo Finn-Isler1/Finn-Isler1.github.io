@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Accumulator grading / error checking-->
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+    <!-- Embedded Stylesheet -->
+    <style>
+        :root {
+            --primary-color: rgb(87, 87, 166);
+            --secondary-color: rgb(57, 43, 33);
+            --background-color: white;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: lightgray;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        section.active {
+            display: block;
+            opacity: 1;
+        }
+
+        p {
+            max-width: 60ch;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: var(--secondary-color);
+            color: white;
+            margin-top: 20px;
+            position: relative;
+            left: 0;
+        }
+
+        footer p {
+            margin: 0 auto;
+            display: inline-block;
+        }
+
+        footer a {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-position: inside;
+        }
+
+        figcaption{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Finn Isler Photography</h1>
+        
+        <nav>
+            <a onclick="showSection('home')">Home</a> |
+            <a onclick="showSection('about')">About</a> |
+            <a onclick="showSection('best-times')">Best Times</a> |
+            <a onclick="showSection('best-places')">Best Places</a> |
+            <a onclick="showSection('how')">How</a> |
+            <a onclick="showSection('why')">Why</a> |
+            <a onclick="showSection('AI')">AI</a>
+        </nav>
+
+    </header>
+    <main>
+
+        <section id="home" class="active">
+            <h2>Home</h2>
+
+            <p>
+                When we go about our day-to-day lives, we are constantly seeing and experiencing new things. Many of these things
+                will live on in our memory for many years, and sometimes, for our whole lives. Photography helps to keep track of
+                the world around us in a more tangible way. It is used capture and remember the things we see. It is also used to share
+                the way we view the world with other people.
+            </p>
+
+            <p>
+                There are many different kinds of photography. Some lean more into the documentary/nonfiction style of photography, while others
+                are more art-driven. Below are some of the main types of photography.
+            </p>
+
+            <ul>
+                <li>Portrait</li>
+                <li>Wildlife</li>
+                <li>Landscape</li>
+                <li>Documentary</li>
+                <li>Street</li>
+                <li>Event</li>
+                <li>Architectural</li>
+                <li>Sports</li>
+                <li>Fashion</li>
+            </ul>
+
+            <figure>
+                <img src="/itis3135/images/ProfilePic.png" alt="Portrait of a handsome fellow" >
+                <figcaption>A potrait of myself I took with the timer function in my camera</figcaption>
+            </figure>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+
+            <p>
+                My name is Finn Isler and I have been practing hobby photography for about a year or so. I mainly enjoy
+                street photography, landscape photography, and architectural photography. I have more experience with digital 
+                photography but I have shot some film.
+            </p>
+
+            <p>
+                I grew to enjoy this hobby because I feel that it makes any activity something to look forward, regardless
+                of whether or not I enjoy it. For example, I recently went on a trip to the beach with my dad, brother, and two friends. They
+                are very passionate about fishing but I am not. Regardless, I still got excited to go because I could bring my camera with me and take photos
+                while they fished. Everyone was happy.
+            </p>
+
+            <figure>
+                <img src="images/beach2025-11.jpg" alt="A friend fishing">
+                <figcaption>A friend of mine fishing at sunset</figcaption>
+            </figure>
+        </section>
+
+        <section id="best-times">
+            <h2>Best Times</h2>
+
+            <p>
+                There is common sentiment that photography is most effective during golden hour. This refers to the hour after sunrise and the hour 
+                before sunset. This is because the light casts a sort of golden/orange tint over everything and makes everything look flattering. Shooting
+                during golden hour is definetly a good idea for easy natural light, especially for portraits and landscapes.
+            </p>
+
+            <p>
+                Shooting excluseively during golden hour however, can be limitting for many reasons. It does not allow you to experiment with other lighting
+                conditions. This in turn can lead to all of your photographs looking the same way. For documentary style photography, it is both unrealisitc and 
+                untrue to the craft. For example, if I am documenting daily life in a particular part of downtown and I only shoot an hour before the sun sets, I am 
+                missing a great deal of what actually happens at that location.
+            </p>
+
+            <figure>
+                <img src="images/street.jpg" alt="Two men converse next to a car">
+                <figcaption>A street photo taken in early afternoon</figcaption>
+            </figure>
+        </section>
+
+        <section id="best-places">
+            <h2>Best Places</h2>
+
+            <p>
+                Photography as a hobby really shines in its versality to be practiced everywhere. Anybody is really able to just 
+                keep a camera on them at all times and take photos of everything they see. That is what I have tried to do ever since I have 
+                owned a camera.
+            </p>
+
+            <p>Below are two photos I took in places that I just happened to have my camera with me.</p>
+
+            <figure>
+                <img src="images/road.jpg" alt="Black and white photo underneath a bridge">
+                <figcaption>A photo I took from my car underneath a bridge</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/food.jpg" alt="A man working behind a counter">
+                <figcaption>A photo I took while walking around The Optimist Food Hall in Charlotte, NC.</figcaption>
+            </figure>
+        </section>
+
+        <section id="how">
+            <h2>How</h2>
+
+            <p>
+                Nowadays, photography is extremely accessible because of the fact that most people have a camera 
+                with them at all times in their pocket. Phone cameras have come a long way and are more than capable of 
+                producing high quality images.
+            </p>
+
+            <p>
+                While the phone cameras are very capable, there is a always going to be a tactile disconnect when using a phone 
+                camera. Luckily, there are still plenty of options in terms of cameras for all sorts of budgets. You can easily find 
+                affordable cameras second hand on Facebook marketplace and flea markets. I have had success and found a lot joy 
+                from taking pictures with a small digital camera that I purchased second-hand for only $20. Below are some images I have taken.
+            </p>
+
+            <figure>
+                <img src="images/p.jpg" alt="Moody photo of a light pole">
+                <figcaption>A photo I took last year with the $20 point-and-shoot</figcaption>
+            </figure>
+
+        </section>
+
+        <section id="why">
+            <h2>Why</h2>
+
+            <p>
+                Expressing the way we view the world in some way or another is very important to the human experience. Photography 
+                is a great way to do this because the barrier to entry is virtually non-existent. Anyone is capable of taking a photo. 
+                This accessibly is a great thing becaus it means people of all ages and from all backgrounds are able to participate.
+            </p>
+
+            <p>
+                Being able to take an effective photo is just a generally useful skill to have as well. It is so common to be asked
+                to take photos of people and of different things, so why not deliver a photo that is superb? For instance, I was a part of the Midas 
+                Club here at Charlotte last semester and they put on a fashion show event. I was able to take some of the photos of the event to use 
+                as promotion on their social medias.
+            </p>
+
+            <figure>
+                <img src="images/f.jpg" alt="A model on a stage at a fashion show">
+                <figcaption>A photo I took at the Midas 2024 fashion show</figcaption>
+            </figure>
+        </section>
+
+        <section id="AI">
+            <h2>AI Prompts</h2>
+
+            <p>
+                I just copy and pasted this text: "
+                Research and find a solution using css and/or JS that hides all sections except the one you have clicked. The idea is to mimic the nav bar in your main site, the user will click a "link" in your nav tag that will hide all the sections on the page and ONLY display info of the section of choice. So if you click on the word "Best locations" in the nav bar, it will only display the "best locations" section on the page and hide the rest so the user can't scroll to see it. 
+                    Add your "links" to the different sections in the header bar in the nav tag, also make sure that you have a favicon as a divider (should also be different from all of your other pages).
+                    If you are unsure if your solution of completing this task fulfills the requirements for this part, ask on CampusWire or on some other quick fashion so we can follow-up.
+                Make sure that the first section displayed for the user is the home page (the "what" section). 
+            "</p>
+        </section>
+
+    </main>
+    <footer>
+        <p>Design by  <a href="/itis3135/finnislerdesign.com/"> Finn Isler Design</a></p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            let sections = document.querySelectorAll("main section");
+            sections.forEach(section => {
+                section.classList.remove("active");
+            });
+
+            document.getElementById(sectionId).classList.add("active");
+        }
+    </script>
+</body>
+</html>
