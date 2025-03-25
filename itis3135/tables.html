@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finn Isler's Festive Impala | ITIS 3135 | Tables</title>
     <link rel="stylesheet" href="styles/default.css">
+    <style>
+        .dark-row{
+            background-color: rgb(182, 182, 182);
+        }
+
+        .darker-row{
+            background-color: grey;
+        }
+    </style>
         
     <!-- Accumulator grading / error checking-->
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
@@ -22,18 +31,121 @@
         <table>
             <tr>
                 <tr>
-                    <th>Header 1</th>
-                    <th>Header 2</th>
-                    <th>Header 3</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
                 </tr>
                 <tr>
-                    <td>Row 1, Col 1</td>
-                    <td>Row 1, Col 2</td>
-                    <td>Row 1, Col 3</td>
+                    <td>Bob</td>
+                    <td>Bjones@gmail.com</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Sam</td>
+                    <td>SamMcdonald@icloud.com</td>
+                    <td>0.5</td>
+                </tr>
+                <tr>
+                    <td>George</td>
+                    <td>GeorgeHarrison@gmail.com</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Julian</td>
+                    <td>JulesS@gmail.com</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Paul</td>
+                    <td>PMccartney@yahoo.com</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Joey</td>
+                    <td>JoeyAd@icloud.com</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Scottie</td>
+                    <td>ScottieM@gmail.com</td>
+                    <td>4</td>
                 </tr>
             </tr>
         </table>
 
+        <!-- better table -->
+
+        <h3>My Totally Tubular Tabular Data</h3>
+        <h3>Employee Data in Complex Table</h3>
+
+        <figure>
+        <table>
+            
+                <tr class="darker-row">
+                    <th>Department</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                    <th>Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">Marketing</td>
+                    <td>Bob</td>
+                    <td>Bjones@gmail.com</td>
+                    <td>3</td>
+                    <td>$2000</td>
+                </tr>
+                <tr class="dark-row">
+                    
+                    <td>Sam</td>
+                    <td>SamMcdonald@icloud.com</td>
+                    <td>0.5</td>
+                    <td>$2200</td>
+                </tr>
+                <tr>
+                    
+                    <td>George</td>
+                    <td>GeorgeHarrison@gmail.com</td>
+                    <td>6</td>
+                    <td>$2200</td>
+                </tr>
+                <tr class="dark-row">
+                    <td rowspan="2">Sales</td>
+                    <td>Julian</td>
+                    <td>JulesS@gmail.com</td>
+                    <td>2</td>
+                    <td>$4200</td>
+                </tr>
+                <tr>
+                    
+                    <td>Paul</td>
+                    <td>PMccartney@yahoo.com</td>
+                    <td>12</td>
+                    <td>$11000</td>
+                </tr>
+                <tr class="dark-row">
+                    <td rowspan="2">HR</td>
+                    <td>Joey</td>
+                    <td>JoeyAd@icloud.com</td>
+                    <td>5</td>
+                    <td>$6400</td>
+                </tr>
+                <tr>
+                    
+                    <td>Scottie</td>
+                    <td>ScottieM@gmail.com</td>
+                    <td>4</td>
+                    <td>$5900</td>
+                </tr>
+                <tr class="dark-row">
+                    <td colspan="4">Budget</td>
+                    <td>$33900</td>
+                </tr>
+            
+        </table>
+
+        <figcaption>Employee stats</figcaption>
+    </figure>
         
     </main>
     <footer>
