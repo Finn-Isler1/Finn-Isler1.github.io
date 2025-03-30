@@ -9,14 +9,15 @@ document.getElementById("infoForm").addEventListener("submit", function(event) {
         return;
     }
 
-
     let courses = document.querySelectorAll("#coursesContainer input");
     let courseList = "";
-    courses.forEach(course => {
-        if (course.value) {
-            courseList += `<p>${course.value}</p>`;
+
+    for (let i = 0; i < courses.length; i++) {
+        if (courses[i].value) { 
+            courseList += "<p>" + courses[i].value + "</p>"; 
         }
-    });
+    }
+
 
     let output = `<p>Results</p>`;
                   
