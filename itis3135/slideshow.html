@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finn Isler's Festive Impala | ITIS 3135 | Tables</title>
+    <link rel="stylesheet" href="styles/default.css">
+        
+    <!-- Accumulator grading / error checking-->
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+
+        <h2>Slideshow</h2>
+
+        <h3>Finn Isler</h3>
+
+        <ul>
+            <li>F - Flowers</li>
+            <li>I - Illumination</li>
+            <li>N - Nature</li>
+            <li>N - Night </li>
+            <li>I - Intersection</li>
+            <li>S - Sport</li>
+            <li>L - Ladder</li>
+            <li>E - Evening</li>
+            <li>R - Reflection</li>
+        </ul>
+
+        <h3 style="justify-content: center; align-items: center; display: flex;"><b>All photos taken by me.</b></h3>
+
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 9</div>
+                <img src="images/Slideshow/flowers.jpg" alt="Flowers" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 9</div>
+                <img src="images/Slideshow/illumination.jpg" alt="Illumination" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 9</div>
+                <img src="images/Slideshow/nature.jpg" alt="Nature" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 9</div>
+                <img src="images/Slideshow/night.jpg" alt="Night" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 9</div>
+                <img src="images/Slideshow/intersection.jpg" alt="Intersection" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 9</div>
+                <img src="images/Slideshow/sport.jpg" alt="Sport" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 9</div>
+                <img src="images/Slideshow/ladder.jpg" alt="Ladder" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 9</div>
+                <img src="images/Slideshow/evening.jpg" alt="Evening" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9 / 9</div>
+                <img src="images/Slideshow/reflection.jpg" alt="Reflection" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="F - Flowers">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="I - Illumination">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="N - Nature">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="N - Night">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="I - Intersection">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="S - Sport">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="L - Ladder">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="E - Evening">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="R - Reflection">
+                </div>
+            </div>
+        </div> 
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
