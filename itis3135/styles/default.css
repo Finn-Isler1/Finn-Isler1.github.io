@@ -303,6 +303,21 @@ figure{
     border-color: var(--tertiary-color);
 }
 
+/* Drawing */
+#audio-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 10;
+    pointer-events: auto;
+}
 
 
 
